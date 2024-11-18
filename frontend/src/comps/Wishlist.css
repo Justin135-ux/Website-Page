@@ -1,0 +1,102 @@
+.wishlist-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #fff;
+  background: linear-gradient(45deg, #ff6b6b, #f9d423);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #fefefe;
+}
+
+.wishlist-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.wishlist-card {
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: calc(20% - 20px);
+  padding: 20px;
+  text-align: center;
+}
+
+.wishlist-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.wishlist-card img {
+  width: 106%;
+  height: 246px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+
+.wishlist-card img:hover {
+  transform: scale(1.05);
+}
+
+.wishlist-card h3 {
+  margin: 10px 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.wishlist-card p {
+  margin: 10px 0;
+  color: #eeeeee;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon-button {
+  background-color: #ff416c;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.2s, transform 0.2s;
+  border-radius: 25px;
+}
+
+.icon-button:hover {
+  background-color: #ff4b2b;
+  transform: scale(1.1);
+}
+
+.wishlist-empty {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.2rem;
+  color: #ffe6e6;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wishlist-empty img {
+  width: 150px;
+  margin-top: 20px;
+  opacity: 0.8;
+}

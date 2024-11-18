@@ -1,0 +1,97 @@
+.user-details-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #f0f2f5, #e3e6ec); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.user-details-container:hover {
+  transform: translateY(-5px); 
+}
+
+
+.user-heading {
+  text-align: center;
+  margin-bottom: 25px;
+  font-family: 'Georgia', serif;
+  font-size: 32px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #2c3e50;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-table th, .user-table td {
+  padding: 14px 20px;
+  text-align: left;
+  font-size: 16px;
+  color: #2c3e50;
+}
+
+.user-table th {
+  background: linear-gradient(135deg, #3b8d99, #6baf92); 
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #f7f9fb;
+}
+
+.user-table tr:hover {
+  background-color: #e9eff5; 
+  cursor: pointer;
+}
+
+
+.banuser {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+
+.banuser.ban {
+  background: linear-gradient(135deg, #ff6b6b, #ff4757);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(255, 107, 107, 0.4);
+}
+
+.banuser.ban:hover {
+  background: linear-gradient(135deg, #ff4c4c, #ff3030);
+  transform: translateY(-2px); 
+}
+
+
+.banuser.unban {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(39, 174, 96, 0.4);
+}
+
+.banuser.unban:hover {
+  background: linear-gradient(135deg, #27ae60, #219150);
+  transform: translateY(-2px);
+}

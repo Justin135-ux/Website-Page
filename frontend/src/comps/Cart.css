@@ -1,0 +1,126 @@
+ .cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #8223c5; 
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  padding: 20px;
+  background-color: wheat;
+  margin-top: 50px;
+}
+
+
+.cartItem {
+  width: 700px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin: 20px;
+  background-color: wheat;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.cartItem:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+button {
+  width: 150px;
+  height: 50px;
+  background-color: #333333;
+  color: blue;
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: medium;
+  font-family: 'Times New Roman', Times, serif;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+  background-color: blueviolet;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+
+.cartItem img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+
+.cartItem .description {
+  flex: 1;
+  padding: 20px;
+  font-size: 18px;
+  color: #333333;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+.countHandler input {
+  width: 50px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+button.remove {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+button.remove:hover {
+  background-color: #ff6666;
+} 
+
+
+.cartItem .description {
+  flex: 1;
+  padding: 20px;
+  font-size: 18px;
+  color: #333;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.cartItem .description p {
+  margin: 5px 0;
+}
+
+
+.countHandler input {
+  width: 60px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 10px;
+  padding: 8px;
+  border: 2px solid #2575fc;
+  border-radius: 15px;
+  background-color: #f5f5f5;
+}
+
+
+button.remove {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+button.remove:hover {
+  background-color: #e60000;
+}

@@ -1,0 +1,201 @@
+body {
+  background-color: black;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+
+.App {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+}
+
+
+.shopTitle {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 80px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #4b0082; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.products {
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+
+.product {
+  border-radius: 15px;
+  width: 300px;
+  background: #222;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.product img {
+  width: 100%;
+  height: auto;                                                    
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+
+.product .description {
+  text-align: center;
+  color:aqua;
+  font-style: italic;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.product:hover {
+  transform: translateY(-10px);
+  box-shadow: rgba(255, 0, 128, 0.6) 0px 20px 40px;
+}
+
+
+.addToCartBttn {
+  background: linear-gradient(135deg, #ff0080, #7928ca);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.4s ease, transform 0.3s ease;
+  margin: 15px 0;
+  /* background-color: blue; */
+  /* color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 10px 0; */
+}
+
+.addToCartBttn:hover {
+  background: linear-gradient(135deg, #ff4d4d, #7928ca);
+  transform: translateY(-5px);
+  /* background-color: blueviolet;
+  transform: translateY(-2px); */
+}
+
+.addToCartBttn.inCart {
+  background: #4CAF50;
+  color: white;
+}
+
+
+.product .price {
+  font-size: 24px;
+  color: #4b0082;
+  font-weight: bold;
+}
+
+.product .name {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  /* color: #333333; */
+  margin: 10px 0;
+}
+
+/* Container for the entire brand section */
+.brand-board {
+  width: 80%;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Heading styling */
+.brand-board h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 32px;
+  color: #333333;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Brand icons container */
+.brands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;  /* Space between brand icons */
+}
+
+/* Styling each brand icon */
+.brand-icon {
+  font-size: 60px;
+  color: #444444;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect for brand icons */
+.brand-icon:hover {
+  transform: scale(1.1);
+  color: #8223c5; /* Adds a colorful effect when hovered */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .brand-board {
+    width: 90%;
+    padding: 20px;
+  }
+  
+  .brand-icon {
+    font-size: 50px;
+  }
+}
+
+/* .brands {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px 0;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.brand-icon {
+  font-size: 60px;
+  color: #ccc;
+  transition: color 0.4s ease, transform 0.4s ease;
+}
+
+.brand-icon:hover {
+  color: #007bff; 
+  cursor: pointer; 
+} */
+
+
+
+ 
